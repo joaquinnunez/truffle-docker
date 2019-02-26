@@ -1,0 +1,6 @@
+FROM node:alpine
+
+RUN yarn global add truffle
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ENTRYPOINT ["truffle"]
